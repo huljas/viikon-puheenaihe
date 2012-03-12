@@ -4408,77 +4408,7 @@ $(function() {
 <!-- /Footer -->
 	
     <script type="text/javascript" src="/webstatic/js/lib/tmv11.js"></script>
-<script type="text/javascript">
-<!--
-//1.1.6.3
-var tmsec = new Array('tmsec=vl', 'tmsec=uutiset', 'tmsec=kotimaa', 'tmsec=politiikka');
-getTMqs('', '', 'hesari_fi', 'fi', 'UTF-8', tmsec);
-//-->
-</script>
-<noscript><p><img
-src="http://statistik-gallup.net/V11***hesari_fi/fi/UTF-8/tmsec=vl&tmsec=uutiset&tmsec=kotimaa&tmsec=politiikka/"
-alt=""></p></noscript><script>
-var v = {};
-if (themetags == undefined) {
-  var themetags ='';
-}
-if(themetags!='') v["themetags"] = encodeURIComponent(themetags);
-if (UserProfile.getShid()) v["shogid"] = UserProfile.getShid();
-if (UserProfile.getShemail()) v["userhlsem"] = UserProfile.getShemail();
-</script>
-<script src="/webstatic/js/lib/insight.js"></script><!-- Facebook -->
-    <form action="https://www.hs.fi/oma/s/s/kirjaudu/" id="frm-fb-login" method="POST" style="display: none;">
-		<input type="hidden" name="j_facebook_authenticate" value="true" />
-		<input type="hidden" name="j_email" value="" />
-	</form>
 
-    <script>
-
-
-      var msnAwareShortFBUrl = 'http://www.hs.fi/a1305557538332';
-      var msnAwareShortUrl = 'http://www.hs.fi/a1305557538332';
-      var articleHeader = 'Jungner ryöpytti puoluetoveriaan';
-      if (msnAwareShortUrl.length != 0) {
-
-          Log.trace("page.jsp: write facebook like");
-          var facebookLike = '<fb:like class="fb-like" href="'+msnAwareShortFBUrl+'?ref=fb-recommend" action="recommend" layout="button_count"></fb:like>';
-          $('.fb').html(facebookLike);
-
-          var urlEncodedTitle = encodeURIComponent(articleHeader);
-          var urlEncodedFBUrl = encodeURIComponent(msnAwareShortFBUrl);
-          var facebookSharerUrl = 'http://www.facebook.com/sharer.php?t=' + urlEncodedTitle + '&u=' + urlEncodedFBUrl + '%3Fref%3Dfb-share';
-          $("#facebook-sharer").attr("href", facebookSharerUrl);
-          SocialMediaClickLogger.init();
-          var googlePlusOneLike = '<g:plusone size="medium" href="'+msnAwareShortUrl+'" ></g:plusone>';
-
-          window.___gcfg = {lang: 'fi'};
-          (function() {
-            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-            po.src = 'https://apis.google.com/js/plusone.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-          })();
-
-          //configuring twitter share
-         // !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-      }
-      window.fbAsyncInit = function() {
-          FB.init({
-            appId      : '188500207846299',
-            status     : true,
-            cookie     : true,
-            xfbml      : true,
-            oauth      : true
-          });
-          UserProfile.facebookInit();
-        dispatch("FACEBOOK_API_READY");
-      };
-      (function(d){
-           var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
-           js = d.createElement('script'); js.id = id; js.async = true;
-           js.src = "//connect.facebook.net/fi_FI/all.js";
-           d.getElementsByTagName('head')[0].appendChild(js);
-      }(document));
-    </script>
 
 </body>
 </html>
