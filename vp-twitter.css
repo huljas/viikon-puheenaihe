@@ -1,9 +1,56 @@
 #vp-twitter {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
+    position: relative;
     background-color: rgba(255, 255, 255, 0.85);
+}
+
+#vp-twitter > header {
+    height: 40px;
+}
+
+#vp-twitter > header > h3 {
+    float: left;
+    line-height: 40px;
+    padding: 0 10px;
+}
+
+#vp-twitter > #vp-feed {
+    position: absolute;
+    top: 40px;
+    left:0;
+    right: 0;
+    -moz-border-sizing: border-box;
+    overflow: auto;
+}
+
+#vp-twitter > #vp-feed > #column1,
+#vp-twitter > #vp-feed > #column2 {
+    width: 49%;
+    float: left;
+    -moz-border-sizing: border-box;
+    height: 100%;
+}
+#vp-twitter > #vp-feed > #column2 {
+    border-left: 2px solid #ddd;
+}
+
+#vp-twitter > #vp-feed .vp-feed-item {
+    padding: 10px;
+    margin: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    -moz-border-radius: 3px;
+}
+
+#vp-twitter > footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -moz-box-sizing: border-box;
+}
+
+#vp-twitter > footer > div#vp-pulse {
+    float: right;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
 }
