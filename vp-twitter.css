@@ -1,6 +1,7 @@
 #vp-twitter {
     position: relative;
     background-color: rgba(255, 255, 255, 0.85);
+    opacity: 0;
 }
 
 #vp-twitter > header {
@@ -24,13 +25,10 @@
 
 #vp-twitter > #vp-feed > #column1,
 #vp-twitter > #vp-feed > #column2 {
-    width: 49%;
+    width: 49.8%;
     float: left;
     -moz-border-sizing: border-box;
     height: 100%;
-}
-#vp-twitter > #vp-feed > #column2 {
-    border-left: 2px solid #ddd;
 }
 
 #vp-twitter > #vp-feed .vp-feed-item {
